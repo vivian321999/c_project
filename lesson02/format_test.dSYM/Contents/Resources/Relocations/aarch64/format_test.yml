@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/vivian/c 语言/lesson02/format_test"
+relocations:     []
+...
