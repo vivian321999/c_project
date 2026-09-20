@@ -12,5 +12,5 @@ int main() {
     int q = a >> (3 * (i - 1));  // a / 8^(i-1)
     int r = q % 8;
 
-    printf("The %i'th number of the octal %o is %d.", i, a, r);
+    printf("The %i'th number of the octal %o is %d.\n", i, a, r);
 }
