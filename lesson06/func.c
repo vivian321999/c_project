@@ -1,0 +1,12 @@
+int FacterialLoop(int n) {
+    int out = 1;
+    for (int i = n; i > 0; i--) out *= i;
+    return out;
+}
+
+int FacterialRecursive(int n) {
+    if (n <= 1)
+        return 1;
+    else
+        return n * FacterialRecursive(n - 1);
+}
