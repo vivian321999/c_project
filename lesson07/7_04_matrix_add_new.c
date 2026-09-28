@@ -9,7 +9,9 @@ int main() {
     int a[3][3] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     matrix_add(a, a, LEN_ARR(a));
     for (int i = 0; i < LEN_ARR(a); i++) {
-        for (int j = 0; j < LEN_ARR(a[i]); j++) printf("%4d,", a[i][j]);
+        for (int j = 0; j < LEN_ARR(a[i]); j++) {
+            printf("%4d,", a[i][j]);
+        }
         printf("\n");
     }
 }
@@ -18,5 +20,7 @@ void matrix_add(int a[][3], int b[][3], size_t sz) { vadd(a[0], b[0], sz * LEN_A
 
 void vadd(int a[const], const int b[], const size_t sz) {
     // printf("%d\n",sz);
-    for (int i = 0; i < sz; i++) a[i] += b[i];
+    for (int i = 0; i < sz; i++) {
+        a[i] += b[i];
+    }
 }

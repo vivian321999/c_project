@@ -6,13 +6,15 @@ int main() {
     int arr[MAX_LEN];
 
     int count = 0;
-    const int SPEC = -1;
     do {
         scanf("%d", &arr[count++]);
-    } while (arr[count - 1] != SPEC);
-    count--;  //?
+    } while (arr[count - 1] != -1);
 
-    for (int i = 0; i < count; i++) printf("%d ", arr[i]);
+    count--;  //?
+    // Remove the -1 from the array
+    for (int i = 0; i < count; i++) {
+        printf("%d\n", arr[i]);
+    }
     printf("\n");
     return 0;
 }

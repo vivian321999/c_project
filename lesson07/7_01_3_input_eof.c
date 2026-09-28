@@ -10,7 +10,9 @@ int main() {
     while (scanf("%d", &arr[count++]) != EOF);
     count--;
 
-    for (int i = 0; i < count; i++) printf("%d ", arr[i]);
+    for (int i = 0; i < count; i++) {
+        printf("%d ", arr[i]);
+    }
     printf("\n");
     return 0;
 }
