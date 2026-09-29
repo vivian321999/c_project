@@ -1,9 +1,12 @@
 {
-    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang",
     "code-runner.executorMap": {
-      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+        "c": "ws=\"$workspaceRoot\"; source_path=$dirWithoutTrailingSlash; relative_path=\"${source_path#\"$ws\"/}\"; output_path=\"$ws/build/$relative_path\"; mkdir -p \"$output_path\" && /usr/bin/clang -std=c11 -g -Wall -Wextra -Wpedantic $fullFileName -o \"$output_path/$fileNameWithoutExt\" && \"$output_path/$fileNameWithoutExt\""
     },
+    "code-runner.ignoreSelection": true,
+    "code-runner.preserveFocus": false,
+    "code-runner.runInTerminal": true,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "xaver.clang-format",
     "C_Cpp.clang_format_style": "file"
-  }
+}
