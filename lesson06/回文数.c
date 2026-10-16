@@ -1,26 +1,31 @@
-#include <stdbool.h>
 #include <stdio.h>
 
-bool isPalindrome(int x) {
-    int reversed_half = 0;
-
-    if (x < 0 || (x != 0 && x % 10 == 0)) {
-        return false;
-    }
-
-    while (x > reversed_half) {
-        reversed_half = reversed_half * 10 + x % 10;
-        x /= 10;
-    }
-
-    return x == reversed_half || x == reversed_half / 10;
-}
-
 int main(void) {
-    int x;
+    int a;
+    int b;
+    int number;
+    int original;
+    int reversed;
+    int count = 0;
 
-    if (scanf("%d", &x) == 1) {
-        printf("%s\n", isPalindrome(x) ? "true" : "false");
+    if (scanf("%d%d", &a, &b) == 2) {
+        for (number = a; number <= b; number++) {
+            original = number;
+            reversed = 0;
+
+            while (number > 0) {
+                reversed = reversed * 10 + number % 10;
+                number /= 10;
+            }
+
+            if (original == reversed) {
+                count++;
+            }
+
+            number = original;
+        }
+
+        printf("%d\n", count);
     }
 
     return 0;
