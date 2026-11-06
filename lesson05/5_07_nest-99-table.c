@@ -1,7 +1,7 @@
 /*nest 99 table*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int i, j;
 
     for (i = 1; i <= 9; i++) {      // 外层for循环

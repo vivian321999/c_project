@@ -9,7 +9,7 @@ int fib(int n) {
     return fib(n - 1) + fib(n - 2);
 }
 
-int main() {
+int main(void) {
     int n;
 
     printf("请输入n值: ");

@@ -17,7 +17,6 @@ int FacterialLoop(int n) {
 }
 
 int FacterialRecursive(int n) {
-    int out_2 = 1;
     if (n <= 1)
         return 1;
     else

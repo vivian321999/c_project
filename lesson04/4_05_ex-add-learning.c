@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main(void) {
     // give two random between 0..9
     srand((unsigned)time(NULL));  // seed
 

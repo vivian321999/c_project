@@ -6,7 +6,7 @@ int sum(int n) {
     else
         return n;
 }
-int main() {
+int main(void) {
     int number, result;
     printf("Enter a positive integer:");
     scanf("%d", &number);

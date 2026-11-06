@@ -1,7 +1,7 @@
 /*ops_bits_examples*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     unsigned int a = 60; /* 60 = 0011 1100 */
     unsigned int b = 13; /* 13 = 0000 1101 */
     int c = 0;

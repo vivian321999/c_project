@@ -41,7 +41,7 @@ long long jumpWays_optimized(int n) {
     return b;
 }
 
-int main() {
+int main(void) {
     int n;
 
     printf("请输入台阶数n: ");

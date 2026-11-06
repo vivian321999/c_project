@@ -1,7 +1,7 @@
 /*compute area primary*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     /*define vars and constants*/
     double radius = 5;
     double area;

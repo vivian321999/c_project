@@ -14,7 +14,7 @@ Rational ADD2(Rational r1, Rational r2);
 Rational* MULTI1(Rational* r1, const Rational* r2);
 Rational MULTI2(Rational r1, Rational r2);
 
-int main() {
+int main(void) {
     assert(gcd(63, 14) == 7);
 
     // C99,可对成员乱序初始化，C++风格

@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main(void) {
     // give a random between 0..n-1
     srand((unsigned)time(NULL));  // seed
     const int n = 10;

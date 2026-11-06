@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int a = 21;
     int b = 10;
-    int c;
     if (a == b)
         printf("Line 1 - a 等于 b\n");
     else

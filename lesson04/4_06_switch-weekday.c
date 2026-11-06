@@ -1,7 +1,7 @@
 /*switch weekday*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int a;
     printf("Input integer number:");
     scanf("%d", &a);

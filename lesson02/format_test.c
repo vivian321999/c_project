@@ -1,7 +1,7 @@
 /*format testing*/
 #include <stdio.h>
  
-int main() {
+int main(void) {
     double radius = 5;
     
     printf("%lf\n",radius); /*default 8.6lf*/

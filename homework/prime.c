@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int m, n;
     int count = 0;
     int maxPrime = 0;

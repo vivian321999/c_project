@@ -28,14 +28,14 @@ union {
     struct BF21 bf21;  // cannot be coexist in a union
 } u2 = {.i = {0x5a, 0x5a}};
 
-int main() {
-    printf("bit_field1 size %ld, start = %p\n", sizeof(bit_field1), &bit_field1);
+int main(void) {
+    printf("bit_field1 size %zu, start = %p\n", sizeof(bit_field1), (void*)&bit_field1);
 
-    printf("bit_field2 size %ld, start = %p\n", sizeof(bit_field2), &bit_field2);
+    printf("bit_field2 size %zu, start = %p\n", sizeof(bit_field2), (void*)&bit_field2);
 
-    printf("bit_field3 size %ld, start = %p\n", sizeof(bit_field3), &bit_field3);
+    printf("bit_field3 size %zu, start = %p\n", sizeof(bit_field3), (void*)&bit_field3);
 
-    printf("bit_field4 size %ld, start = %p\n", sizeof(bit_field4), &bit_field4);
+    printf("bit_field4 size %zu, start = %p\n", sizeof(bit_field4), (void*)&bit_field4);
 
     printf("%x,%x\n", u1.bf11.a,
            u1.bf11.b);  // read 4 bits, skip 2 bits then add ones for a; read 5 bits for b

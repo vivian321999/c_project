@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     float a = 1.23456789012345f;
     double b = 1.23456789012345;
 

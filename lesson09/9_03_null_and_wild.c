@@ -8,9 +8,11 @@ int* f(void) {
 
 int main(void) {
     int* p;  // 错：未初始化，p 是野指针
+    (void)p;
     // printf("%d\n", *p);   // 未定义行为，可能段错误
 
     int* q = NULL;
+    (void)q;
     // printf("%d\n", *q);   // 错：解引用空指针，通常段错误
 
     int* r = malloc(sizeof(int));
@@ -18,6 +20,7 @@ int main(void) {
     // printf("%d\n", *r);   // 错：free 后未置 NULL，r 是野指针
 
     int* s = f();
+    (void)s;
     // printf("%d\n", *s);   // 错：s 指向已销毁内存
 
     return 0;

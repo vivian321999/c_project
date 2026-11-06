@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main(void) {
     // give seed
     srand((unsigned)time(NULL));  // seed
 

@@ -1,7 +1,7 @@
 /*ex-sort-three*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int i, j, k;
     int max, min, median;
 

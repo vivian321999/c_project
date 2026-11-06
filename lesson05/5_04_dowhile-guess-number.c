@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main(void) {
     // give a number between 0 .. 99
     srand((unsigned)time(NULL));  // seed
     int target = rand() % 100;

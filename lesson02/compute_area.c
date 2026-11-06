@@ -1,7 +1,7 @@
 /*compute area*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     /*define vars and constants*/
     double radius, area, volume;
     const double PI = 3.14;

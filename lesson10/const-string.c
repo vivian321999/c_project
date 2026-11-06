@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main(void) {
     char* s = "STUDENT";
     // 这里等价 (char*){"STUDENT"}
     // "STUDENT" 加载到代码段，只读

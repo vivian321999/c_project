@@ -19,7 +19,7 @@ int encipher(int ch, int offset) {
     return ch;
 }
 
-int main() {
+int main(void) {
     char ch;
     scanf("%c", &ch);
     while (ch != '\n') {

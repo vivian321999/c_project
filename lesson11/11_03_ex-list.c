@@ -32,6 +32,7 @@ NODE_PTR ListDelete(NODE_PTR* li) {
 ***********/
 NODE_PTR ListInsert(NODE_PTR* li, int i) {
     // 给出函数实现
+    (void)i;
     return *li;
 }
 

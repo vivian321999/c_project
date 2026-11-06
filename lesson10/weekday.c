@@ -1,14 +1,15 @@
 #include <assert.h>
 #include <stdio.h>
+#include <string.h>
 
 int leap(int year);
 const char* weekday(int year, int month, int day);
 
-int main() {
+int main(void) {
     int year = 2022, month = 11, day = 29;
     printf("%s\n", weekday(year, month, day));
     // 以下是指针相等，不是字符串相等。
-    assert(weekday(year, month, day) == "Tuesday");
+    assert(strcmp(weekday(year, month, day), "Tuesday") == 0);
     return 0;
 }
 

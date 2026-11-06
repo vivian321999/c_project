@@ -1,7 +1,7 @@
 /*ops arithmetic quotient*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int a = 0123456;
     int i = 3;
 

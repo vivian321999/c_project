@@ -1,7 +1,7 @@
 /*loop*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int sum = 0;
     int i = 1;
     while (sum <= 100) {

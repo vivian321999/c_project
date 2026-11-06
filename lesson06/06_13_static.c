@@ -1,7 +1,7 @@
 /*static*/
 #include <stdio.h>
 
-int func() {
+int func(void) {
     static int count = 4;
     if (count) {
         printf("%d\n", count);
@@ -12,7 +12,7 @@ int func() {
     }
 }
 
-int main() {
+int main(void) {
     for (int i = 0; i < 10; i++)
         if (!func()) break;
 }

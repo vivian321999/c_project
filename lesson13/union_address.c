@@ -15,5 +15,5 @@ int main(void) {
     //    printf("%p\n", &temp.y);
 
     printf("%d\n", temp.x);
-    printf("%d\n", temp.y);
+    printf("%f\n", temp.y);
 }

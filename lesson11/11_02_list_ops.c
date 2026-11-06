@@ -11,7 +11,7 @@ int main(void) {
     for (NODE_PTR p = list; p; p = p->next) printf("%d,", p->customerData);
     printf("\n");
 
-    printf("len = %d\n", ListLength(list));
+    printf("len = %zu\n", ListLength(list));
     printf("li[3] = %d\n", ListIndex(list, 3)->customerData);
 
     list = ListAdd(list, 11);

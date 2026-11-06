@@ -1,7 +1,7 @@
 /*while count string*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int n = 0;
 
     printf("Input a string:");

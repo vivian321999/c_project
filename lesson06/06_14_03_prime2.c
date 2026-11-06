@@ -3,7 +3,7 @@
 
 int isPrime(unsigned int n);
 
-int main() {
+int main(void) {
     // test case
     int n = 12345;  // 97,100,12345
     for (int i = n; n > 1; i--) {

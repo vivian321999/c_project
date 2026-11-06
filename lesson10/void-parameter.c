@@ -6,7 +6,7 @@
 void* MemRepeat(void* dest, void* src, size_t src_sz, size_t count);
 void Printx(void* p, size_t bytes_count);
 
-int main() {
+int main(void) {
     int a[10], d = 7;
     float b[10], e = 3.14;
 
@@ -26,10 +26,9 @@ int main() {
 void* MemRepeat(void* dest, void* src, size_t src_sz, size_t count) {
     assert(dest && src);
     void* p = dest;
-    int i;
-    for (i = 0; i < count; i++) {
+    for (size_t i = 0; i < count; i++) {
         memcpy(p, src, src_sz);
-        p += src_sz;
+        p = (unsigned char*)p + src_sz;
         //        src += src_sz;
     }
     return dest;
@@ -37,8 +36,8 @@ void* MemRepeat(void* dest, void* src, size_t src_sz, size_t count) {
 
 void Printx(void* p, size_t bytes_count) {
     assert(p);
-    int i;
-    for (i = 0; i < bytes_count; i++, p++) printf("%4x", *(unsigned char*)p);
+    for (size_t i = 0; i < bytes_count; i++, p = (unsigned char*)p + 1)
+        printf("%4x", *(unsigned char*)p);
     printf("\n");
 }
 

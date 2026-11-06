@@ -1,7 +1,7 @@
 /*switch score to grade*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int score;
     scanf("%d", &score);
     switch (score / 10) {

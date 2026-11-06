@@ -3,7 +3,7 @@
 
 #define MAX_LEN 100
 
-int main() {
+int main(void) {
     int arr[MAX_LEN];
 
     int count = 0;

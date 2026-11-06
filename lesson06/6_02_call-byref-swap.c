@@ -13,7 +13,7 @@ void NoSwap(int x, int y) {
     y = t;
 }
 
-int main() {
+int main(void) {
     int a = 1, b = 3;
     printf("Before swapping: %d %d\n", a, b);
     Swap(&a, &b);

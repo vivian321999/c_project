@@ -1,6 +1,6 @@
 /*operator precedence*/
 #include <stdio.h>
-int main() {
+int main(void) {
     int a = 16, b = 4, c = 2;
 
     int d = a + b * c;

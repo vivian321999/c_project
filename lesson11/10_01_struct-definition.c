@@ -27,7 +27,7 @@ struct CLASS {
 
 struct CLASS c_class[6];
 
-int main() {
+int main(void) {
     printf("hello");
 
     return 0;

@@ -1,7 +1,7 @@
 /*const point*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     const int n = 1;  // const 类型对象
                       //    n = 2; // 错误： n 的类型为 const 限定
     int x = 2;        // 无限定类型对象
@@ -17,6 +17,8 @@ int main() {
     const int* a = p1;  // 非 const 可隐式转为 const
                         //    p1 = a; // 错误：舍弃限定符（ const int 到 int ）
     p1 = (int*)a;       // const 赋予 非 const 必须显式转型
+    (void)n;
+    (void)p;
 
     return 0;
 }

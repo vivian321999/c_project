@@ -1,7 +1,7 @@
 /*io simple*/
 #include<stdio.h>
  
-int main() {
+int main(void) {
 	int a,b,c;
 	
 	printf("请输入：");

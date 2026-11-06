@@ -1,7 +1,7 @@
 /*average rain*/
 #include <stdio.h>
 
-int main() {
+int main(void) {
     double data[100];
     int n = 0;
 

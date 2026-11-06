@@ -1,6 +1,6 @@
 /*twoway if max*/
 #include <stdio.h>
-int main() {
+int main(void) {
     int a, b, max;
     printf("输入两个整数：");
     scanf("%d %d", &a, &b);

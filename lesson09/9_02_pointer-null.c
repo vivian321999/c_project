@@ -3,6 +3,7 @@
 
 int main(void) {
     int a = 10;
+    (void)a;
     int* p = NULL;
     //  下面语句将导致程序中止
     //    *p = 10;

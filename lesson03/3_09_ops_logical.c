@@ -1,8 +1,7 @@
 #include <stdio.h>
-int main() {
+int main(void) {
     int a = 5;
     int b = 20;
-    int c;
     printf("a 的值为 %d, b 的值为 %d\n", a, b);
     if (a && b) printf("Line 1 - 条件为真\n");
     if (a || b) printf("Line 2 - 条件为真\n");

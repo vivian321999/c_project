@@ -1,6 +1,6 @@
 #include<stdio.h>
  
-int main() {
+int main(void) {
 	char str[233] ;
 	
 	printf("请输入：");

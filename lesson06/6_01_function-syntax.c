@@ -3,7 +3,7 @@
 int Square(int);  // function declarations
 int Cube(int);
 
-int main() {
+int main(void) {
     printf("The square of 3 is %d\n", Square(3));
     printf("The cube of 3 is %d \n", Cube(3));
     return 0;

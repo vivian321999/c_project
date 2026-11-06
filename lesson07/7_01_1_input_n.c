@@ -2,7 +2,7 @@
 
 #define MAX_LEN 100
 
-int main() {
+int main(void) {
     int count, arr[MAX_LEN];
 
     scanf("%d", &count);
