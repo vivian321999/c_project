@@ -18,7 +18,7 @@ void divmod(int a, int b, int* q, int* r) { /* 输出参数 */
     *r = a % b;
 }
 
-int main() {
+int main(void) {
     int a = 3, b = 5;
     swap_wrong(a, b);
     printf("wrong: a=%d b=%d\n", a, b);
