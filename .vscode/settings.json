@@ -1,7 +1,7 @@
 {
     "C_Cpp.default.compilerPath": "/usr/bin/clang",
     "code-runner.executorMap": {
-        "c": "ws=\"$workspaceRoot\"; source_path=$dirWithoutTrailingSlash; relative_path=\"${source_path#\"$ws\"/}\"; output_path=\"$ws/build/$relative_path\"; mkdir -p \"$output_path\" && /usr/bin/clang -std=c11 -g -Wall -Wextra -Wpedantic $fullFileName -o \"$output_path/$fileNameWithoutExt\" && \"$output_path/$fileNameWithoutExt\""
+        "c": "ws=\"$workspaceRoot\"; source_path=$dirWithoutTrailingSlash; relative_path=\"${source_path#\"$ws\"/}\"; output_path=\"$ws/build/$relative_path\"; mkdir -p \"$output_path\" && /usr/bin/clang -std=c11 -g -Wall -Wextra -Wpedantic $fullFileName -o \"$output_path/$fileNameWithoutExt\" && cd \"$source_path\" && \"$output_path/$fileNameWithoutExt\""
     },
     "code-runner.ignoreSelection": true,
     "code-runner.preserveFocus": false,

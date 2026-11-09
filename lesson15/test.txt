@@ -1,0 +1,3 @@
+Hello, file I/O!
+This is a test file.
+文本文件读取成功。
